@@ -33,8 +33,13 @@ button, input, select, option, textarea {
 }
 
 .header {
+	width: 100%;
 	padding: 24px 0;
 	background: #181818;	
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
 }
 
 .header__inner {
@@ -1054,6 +1059,10 @@ button, input, select, option, textarea {
 }
 
 @media screen and (max-width: 575px) {
+	.header {
+		padding: 15px 0;
+	}
+	
 	.hero__title {
 		font-size: 35px;
 		line-height: 40px;
